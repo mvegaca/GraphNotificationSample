@@ -129,4 +129,8 @@
     <value>Main</value>
     <comment>Navigation view item name for Main</comment>
   </data>
+  <data name="ExceptionSettingsStorageExtensionsFileNameIsNullOrEmpty" xml:space="preserve">
+    <value>File name is null or empty. Specify a valid file name</value>
+    <comment>File name is null or empty to save file in settings storage extensions</comment>
+  </data>
 </root>

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 
 using GraphNotificationSample.Activation;
-
+using GraphNotificationSample.Core.Helpers;
 using Windows.ApplicationModel.Activation;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
@@ -83,6 +83,7 @@ namespace GraphNotificationSample.Services
 
         private async Task StartupAsync()
         {
+            Singleton<ConnectedDevicesPlatformService>.Instance.Initialize();
             await Task.CompletedTask;
         }
 
